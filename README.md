@@ -12,7 +12,7 @@
 #### Kwangwoon University - Bachelor, Electronic Engineering  
 2020.03 - 2026.02
 - Relevant coursework : Digital Logic Design, Computer Architecture, Semiconductor Engineering
-- GPA : 4.36 / 4.5
+- GPA : 4.36 / 4.5 (Major GPA : 4.5 / 4.5)
 - (GPA, activities, thesis/capstone project, etc. — add if applicable)
 
 ---
