@@ -43,19 +43,19 @@ A MicroBlaze-based I2C Master implemented on the Basys3, including custom IP pac
 RTL design of I2C and SPI controllers with a UVM-based verification environment. Functional correctness confirmed through coverage-driven verification.  
 `SystemVerilog` `UVM` `SVA`
 
-### [RV32I Single-Cycle CPU](https://github.com/username/rv32i-cpu)
+### [RV32I Single-Cycle CPU](https://github.com/kimdh315/rv32i-single_cycle)
 A single-cycle CPU supporting the RISC-V RV32I instruction set, designed in Verilog and implemented on the Basys3 board.  
 `Verilog` `RISC-V` `Basys3`
 
-### [UART protocol design](https://github.com/username/uart)
+### [UART & FIFO with UVM](https://github.com/kimdh315/uart_fifo_uvm)
 RTL design of a UART serial communication controller, verified with a UVM-based testbench. Includes configurable baud rate and coverage-driven functional verification.  
-`SystemVerilog` `UART` `UVM`
+`SystemVerilog` `UART` `FIFO` `UVM`
 
 ---
 
 ## Contact
 
-- Email: kehdgus0315@gmail.com
+- Email: kimdh01315@gmail.com
 
 ---
 
