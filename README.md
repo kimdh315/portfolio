@@ -43,7 +43,7 @@ A MicroBlaze-based I2C Master implemented on the Basys3, including custom IP pac
 RTL design of I2C and SPI controllers with a UVM-based verification environment. Functional correctness confirmed through coverage-driven verification.  
 `SystemVerilog` `UVM` `SVA`
 
-### [RV32I Single-Cycle CPU](https://github.com/kimdh315/rv32i-single_cycle)
+### [RV32I Single-Cycle CPU](https://github.com/kimdh315/rv32i_single_cycle)
 A single-cycle CPU supporting the RISC-V RV32I instruction set, designed in Verilog and implemented on the Basys3 board.  
 `Verilog` `RISC-V` `Basys3`
 
