@@ -31,12 +31,12 @@
 
 ## Featured Projects
 
-### [SoC based on MicroBlaze](https://github.com/username/microblaze-i2c-master)
-1. MicroBlaze based SoC implemented on the Basys3
+### [SoC based on AXI](https://github.com/kimdh315/soc_axi_microblaze)
+1. AXI4-Lite based SoC implemented on the Basys3 with MicroBlaze
 2. RTL design custom IP is used - Timer, UART, SPI, I2C, GPIO
 3. Verification with Vitis C code
 
-`MicroBlaze` `Custom IP` `Vivado` `Vitis` `C`
+`AXI` `Custom IP` `Vivado` `Vitis` `C`
 
 ### [I2C / SPI Controller with UVM](https://github.com/kimdh315/spi_i2c_uvm)
 1. RTL design of SPI and I2C controller
