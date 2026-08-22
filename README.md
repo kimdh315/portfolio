@@ -60,6 +60,7 @@ RTL design of a UART serial communication controller, verified with a UVM-based 
 ## Contact
 
 - Email: kimdh01315@gmail.com
+- github: https://github.com/kimdh315/portfolio
 
 ---
 
