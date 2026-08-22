@@ -24,39 +24,43 @@
 | **RTL Design** | SystemVerilog, Verilog |
 | **Verification** | UVM, SystemVerilog Assertions (SVA), Functional Coverage |
 | **FPGA** | Xilinx Artix-7 (Basys3), Vivado |
-| **Embedded** | STM32, MicroBlaze, Embedded C |
+| **Embedded** | MicroBlaze, Embedded C |
 | **Tools** | Git, GTKWave, Vivado Simulator |
 
 ---
 
 ## Featured Projects
 
-### [FPGA AI Accelerator](https://github.com/username/fpga-ai-accelerator)
-An FPGA-based AI accelerator using the Basys3 as the inference engine and an STM32 as the control CPU.  
-`FPGA` `CNN` `STM32`
-
 ### [SoC based on MicroBlaze](https://github.com/username/microblaze-i2c-master)
-A MicroBlaze-based I2C Master implemented on the Basys3, including custom IP packaging and a Git-based workflow.  
-`MicroBlaze` `Custom IP` `Vivado`
+1. MicroBlaze based SoC implemented on the Basys3
+2. RTL design custom IP is used - Timer, UART, SPI, I2C, GPIO
+3. Verification with Vitis C code
+
+`MicroBlaze` `Custom IP` `Vivado` `Vitis` `C`
 
 ### [I2C / SPI Controller with UVM](https://github.com/kimdh315/spi_i2c_uvm)
-RTL design of I2C and SPI controllers with a UVM-based verification environment. Functional correctness confirmed through coverage-driven verification.  
+1. RTL design of SPI and I2C controller
+2. Verification with UVM
+
 `SystemVerilog` `UVM` `SVA`
 
 ### [RV32I Pipeline CPU](https://github.com/kimdh315/rv32i_pipeline)
-`Verilog` `RISC-V` `Basys3`
 1. 5 stage pipeline CPU supporting the RISC-V RV32I instruction set
 2. Designed to resolve setup time violation at single cycle CPU
-3. Verification with assembly code - Bubble sort algorithm  
+
+`Verilog` `RISC-V` `Basys3`
 
 ### [RV32I Single-Cycle CPU](https://github.com/kimdh315/rv32i_single_cycle)
 1. Single cycle CPU supporting the RISC-V RV32I instruction set
-2. Verification with assembly code - Bubble sort algorithm  
+2. Verification with assembly code - Bubble sort algorithm
+
 `Verilog` `RISC-V` `Basys3`
 
 ### [UART & FIFO with UVM](https://github.com/kimdh315/uart_fifo_uvm)
-RTL design of a UART serial communication controller, verified with a UVM-based testbench. Includes configurable baud rate and coverage-driven functional verification.  
-`SystemVerilog` `UART` `FIFO` `UVM`
+1. RTL design of 8-N-1 UART protocol controller and 8 bit width synchronous FIFO
+2. Verification with UVM
+
+`Verilog` `SystemVerilog` `UART` `FIFO` `UVM`
 
 ---
 
