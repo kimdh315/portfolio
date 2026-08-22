@@ -39,16 +39,19 @@ An FPGA-based AI accelerator using the Basys3 as the inference engine and an STM
 A MicroBlaze-based I2C Master implemented on the Basys3, including custom IP packaging and a Git-based workflow.  
 `MicroBlaze` `Custom IP` `Vivado`
 
-### [RV32I Pipeline CPU](https://github.com/kimdh315/rv32i_pipeline)
-A pipeline CPU supporting the RISC-V RV32I instruction set, designed to avoid setup violation to reduce critical path  
-`Verilog` `RISC-V` `Basys3`
-
 ### [I2C / SPI Controller with UVM](https://github.com/kimdh315/spi_i2c_uvm)
 RTL design of I2C and SPI controllers with a UVM-based verification environment. Functional correctness confirmed through coverage-driven verification.  
 `SystemVerilog` `UVM` `SVA`
 
+### [RV32I Pipeline CPU](https://github.com/kimdh315/rv32i_pipeline)
+`Verilog` `RISC-V` `Basys3`
+1. 5 stage pipeline CPU supporting the RISC-V RV32I instruction set
+2. Designed to resolve setup time violation at single cycle CPU
+3. Verification with assembly code - Bubble sort algorithm  
+
 ### [RV32I Single-Cycle CPU](https://github.com/kimdh315/rv32i_single_cycle)
-A single-cycle CPU supporting the RISC-V RV32I instruction set, designed in Verilog and implemented on the Basys3 board.  
+1. Single cycle CPU supporting the RISC-V RV32I instruction set
+2. Verification with assembly code - Bubble sort algorithm  
 `Verilog` `RISC-V` `Basys3`
 
 ### [UART & FIFO with UVM](https://github.com/kimdh315/uart_fifo_uvm)
