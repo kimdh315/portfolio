@@ -13,7 +13,17 @@
 2020.03 - 2026.02
 - Relevant coursework : Digital Logic Design, Computer Architecture, Semiconductor Engineering
 - GPA : 4.36 / 4.5 (Major GPA : 4.5 / 4.5)
-- (GPA, activities, thesis/capstone project, etc. — add if applicable)
+- Project : 
+  1. 10MHz 10bits Monotonic SAR ADC circuit design
+  2. Snapshot Digital PLL circuit design
+- Club : ROLAB / Trick
+
+#### On-Device AI System Semiconductor Design Education
+2026.03 - Current
+- Project :
+  1. SoC based on AXI
+  2. RV32I Single-Cycle CPU
+  3. UART / FIFO Design & Verification
 
 ---
 
@@ -38,11 +48,11 @@
 
 `AXI` `Custom IP` `Vivado` `Vitis` `C`
 
-### [I2C / SPI Controller with UVM](https://github.com/kimdh315/spi_i2c_uvm)
+<!-- ### [I2C / SPI Controller with UVM](https://github.com/kimdh315/spi_i2c_uvm)
 1. RTL design of SPI and I2C controller
 2. Verification with UVM
 
-`SystemVerilog` `UVM` `SVA`
+`SystemVerilog` `UVM` `SVA` -->
 
 ### [RV32I Pipeline CPU](https://github.com/kimdh315/rv32i_pipeline)
 1. 5 stage pipeline CPU supporting the RISC-V RV32I instruction set
