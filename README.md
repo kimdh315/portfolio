@@ -39,6 +39,8 @@
 
 ---
 
+<div style="page-break-after: always;"></div>
+
 ## Featured Projects
 
 ### [OV7670 Camera with VGA](https://github.com/kimdh315/vga_camera.git)
@@ -64,12 +66,8 @@
 ### [RV32I Pipeline CPU](https://github.com/kimdh315/rv32i_pipeline)
 1. 5 stage pipeline CPU supporting the RISC-V RV32I instruction set
 2. Designed to resolve setup time violation at single cycle CPU
-
-`Verilog` `RISC-V` `Basys3`
-
-### [RV32I Single-Cycle CPU](https://github.com/kimdh315/rv32i_single_cycle)
-1. Single cycle CPU supporting the RISC-V RV32I instruction set
-2. Verification with assembly code - Bubble sort algorithm
+3. Achieved a 32.3% reduction in critical path delay compared to the single-cycle design, improving from 14.391 ns to 9.736 ns
+4. Verification with assembly code - Bubble sort algorithm
 
 `Verilog` `RISC-V` `Basys3`
 
