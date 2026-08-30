@@ -41,6 +41,13 @@
 
 ## Featured Projects
 
+### [OV7670 Camera with VGA](https://github.com/kimdh315/vga_camera.git)
+1. Get image from ov7670 camera and display it by VGA connect
+2. SCCB is designed based on FSM to setup ov7670 camera module
+3. Gray and Binary filter is added and controlled by switch on Basys3 board
+
+`OV7670` `SCCB` `VGA` `Verilog`
+
 ### [SoC based on AXI](https://github.com/kimdh315/soc_axi_microblaze)
 1. AXI4-Lite based SoC implemented on the Basys3 with MicroBlaze
 2. RTL design custom IP is used - Timer, UART, SPI, I2C, GPIO
@@ -71,6 +78,13 @@
 2. Verification with UVM
 
 `Verilog` `SystemVerilog` `UART` `FIFO` `UVM`
+
+---
+
+## AI Utilization
+
+### [UVM Auto Generation](https://github.com/kimdh315/auto_uvm_gen.git)
+- Automated generation of UVM boilerplate with Python, minimizing repetitive coding unrelated to verification logic
 
 ---
 
