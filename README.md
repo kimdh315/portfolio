@@ -11,7 +11,7 @@
 
 #### Kwangwoon University - Bachelor, Electronic Engineering  
 2020.03 - 2026.02
-- Relevant coursework : Digital Logic Design, Computer Architecture, Semiconductor Engineering
+- Relevant coursework : Digital Engineering, Computer Architecture, Circuit Theory
 - GPA : 4.36 / 4.5 (Major GPA : 4.5 / 4.5)
 - Project : 
   1. 10MHz 10bits Monotonic SAR ADC circuit design
@@ -32,7 +32,7 @@
 | Area | Details |
 |------|---------|
 | **RTL Design** | SystemVerilog, Verilog |
-| **Verification** | UVM, SystemVerilog Assertions (SVA), Functional Coverage |
+| **Verification** | UVM, Functional Coverage |
 | **FPGA** | Xilinx Artix-7 (Basys3), Vivado |
 | **Embedded** | MicroBlaze, Embedded C |
 | **Tools** | Git, GTKWave, Vivado Simulator |
