@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="236" viewBox="0 0 420 236" font-family="Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
+<defs><clipPath id="r"><rect width="420" height="236" rx="14"/></clipPath></defs>
+<g clip-path="url(#r)"><rect width="420" height="236" fill="#FFFFFF"/><rect width="420" height="6" fill="#0284C7"/></g>
+<rect x="0.5" y="0.5" width="419" height="235" rx="14" fill="none" stroke="#E5E7EB"/>
+<text x="24" y="38" font-size="11" font-weight="700" letter-spacing="1.5" fill="#0284C7">PROCESSOR</text>
+<text x="24" y="66" font-size="22" font-weight="800" fill="#111827">RV32I Pipeline CPU</text>
+<text x="24" y="89" font-size="13" fill="#6B7280">5단 파이프라인 RISC-V 프로세서</text>
+<rect x="24.0" y="104" width="180.0" height="68" rx="10" fill="#0284C7" fill-opacity="0.08"/>
+<text x="38.0" y="136" font-size="22" font-weight="800" fill="#0284C7">-32.3%</text>
+<text x="38.0" y="157" font-size="11" fill="#4B5563">Critical path delay</text>
+<rect x="216.0" y="104" width="180.0" height="68" rx="10" fill="#0284C7" fill-opacity="0.08"/>
+<text x="230.0" y="136" font-size="22" font-weight="800" fill="#0284C7">9.736 ns</text>
+<text x="230.0" y="157" font-size="11" fill="#4B5563">14.391 ns에서 단축</text>
+<rect x="24" y="190" width="66.19999999999999" height="24" rx="12" fill="#F3F4F6"/>
+<text x="57.099999999999994" y="206" font-size="11" font-weight="600" fill="#374151" text-anchor="middle">Verilog</text>
+<rect x="96.19999999999999" y="190" width="59.599999999999994" height="24" rx="12" fill="#F3F4F6"/>
+<text x="125.99999999999999" y="206" font-size="11" font-weight="600" fill="#374151" text-anchor="middle">RISC-V</text>
+<rect x="161.79999999999998" y="190" width="59.599999999999994" height="24" rx="12" fill="#F3F4F6"/>
+<text x="191.59999999999997" y="206" font-size="11" font-weight="600" fill="#374151" text-anchor="middle">Basys3</text>
+</svg>
