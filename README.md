@@ -25,7 +25,7 @@ RTL 설계와 UVM 기반 검증을 중심으로 FPGA 및 임베디드 시스템�
 
 **온디바이스 AI 시스템반도체 설계 교육** &nbsp;|&nbsp; `2026.03 – 2026.10`
 
-- **프로젝트** : CNN 가속기 설계 · RV32I CPU · AXI 기반 SoC · UART / FIFO 설계 및 UVM 검증
+- **프로젝트** : CNN 가속기 설계, RV32I CPU, AXI 기반 SoC, UART / FIFO 설계 및 UVM 검증
 
 ---
 
@@ -33,34 +33,11 @@ RTL 설계와 UVM 기반 검증을 중심으로 FPGA 및 임베디드 시스템�
 
 | 분야 | 내용 |
 |:--|:--|
-| **RTL 설계** | ![SystemVerilog](https://img.shields.io/badge/SystemVerilog-1A4D8F?style=flat-square) ![Verilog](https://img.shields.io/badge/Verilog-2E7D32?style=flat-square) |
-| **검증** | ![UVM](https://img.shields.io/badge/UVM-6A1B9A?style=flat-square) ![Functional Coverage](https://img.shields.io/badge/Functional_Coverage-8E24AA?style=flat-square) |
-| **FPGA** | ![Artix-7](https://img.shields.io/badge/Artix--7_(Basys3)-ED1C24?style=flat-square) ![Zynq-7020](https://img.shields.io/badge/Zynq--7020_(Zybo_Z7--20)-ED1C24?style=flat-square) ![Vivado](https://img.shields.io/badge/Vivado-F57C00?style=flat-square) |
-| **임베디드** | ![MicroBlaze](https://img.shields.io/badge/MicroBlaze-455A64?style=flat-square) ![C](https://img.shields.io/badge/Embedded_C-00599C?style=flat-square&logo=c&logoColor=white) |
-| **툴** | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![Vivado Simulator](https://img.shields.io/badge/Vivado_Simulator-F57C00?style=flat-square) ![Virtuoso](https://img.shields.io/badge/Virtuoso-0277BD?style=flat-square) ![PSpice](https://img.shields.io/badge/PSpice-0277BD?style=flat-square) |
-
----
-
-<div style="page-break-after: always;"></div>
-
-## 주요 프로젝트
-
-<table>
-  <tr>
-    <td><a href="https://github.com/mumallaeng/LightLetter"><img src="images/cards/lightletter.svg" width="400"/></a></td>
-    <td><a href="https://github.com/kimdh315/rv32i_pipeline"><img src="images/cards/rv32i_pipeline.svg" width="400"/></a></td>
-  </tr>
-  <tr>
-    <td><a href="https://github.com/kimdh315/uart_fifo_uvm"><img src="images/cards/uart_fifo_uvm.svg" width="400"/></a></td>
-    <td><a href="https://github.com/kimdh315/soc_axi_microblaze"><img src="images/cards/axi_soc.svg" width="400"/></a></td>
-  </tr>
-  <tr>
-    <td><a href="https://github.com/kimdh315/vga_camera"><img src="images/cards/ov7670_vga.svg" width="400"/></a></td>
-    <td><a href="https://github.com/kimdh315/body_and_workout_check"><img src="images/cards/workout_check.svg" width="400"/></a></td>
-  </tr>
-</table>
-
-<sub>카드를 클릭하면 해당 저장소로 이동합니다.</sub>
+| **RTL 설계** | SystemVerilog Verilog |
+| **검증** | UVM Functional Coverage |
+| **FPGA** | Artix-7 Zynq-7020 Vivado |
+| **임베디드** | MicroBlaze C |
+| **툴** | Git Vivado Simulator Virtuoso PSpice |
 
 ---
 
@@ -68,11 +45,11 @@ RTL 설계와 UVM 기반 검증을 중심으로 FPGA 및 임베디드 시스템�
 
 ## 프로젝트 기술서
 
-### 01. [Light Letter](https://github.com/mumallaeng/LightLetter) ![우수상](https://img.shields.io/badge/%EC%9A%B0%EC%88%98%EC%83%81-F59E0B?style=flat-square)
+### 01. [Light Letter](https://github.com/mumallaeng/LightLetter)
 
 <table>
 <tr>
-<td width="50%" valign="top"><img src="images/projects/lightletter.svg" width="100%"/></td>
+<td width="50%" valign="top"><img src="images/lightletter.png" width="100%"/></td>
 <td width="50%" valign="top">
 
 **기간** &nbsp; 2026.09 – 2026.10<br/>
@@ -103,7 +80,7 @@ RTL 설계와 UVM 기반 검증을 중심으로 FPGA 및 임베디드 시스템�
 
 <table>
 <tr>
-<td width="50%" valign="top"><img src="images/projects/workout_check.svg" width="100%"/></td>
+<td width="50%" valign="top"><img src="images/workout_check.png" width="100%"/></td>
 <td width="50%" valign="top">
 
 **기간** &nbsp; 2026.08<br/>
@@ -133,7 +110,7 @@ RTL 설계와 UVM 기반 검증을 중심으로 FPGA 및 임베디드 시스템�
 
 <table>
 <tr>
-<td width="50%" valign="top"><img src="images/projects/axi_soc.svg" width="100%"/></td>
+<td width="50%" valign="top"><img src="images/axi_soc.png" width="100%"/></td>
 <td width="50%" valign="top">
 
 **기간** &nbsp; 2026.06<br/>
@@ -163,7 +140,7 @@ RTL 설계와 UVM 기반 검증을 중심으로 FPGA 및 임베디드 시스템�
 
 <table>
 <tr>
-<td width="50%" valign="top"><img src="images/projects/rv32i_pipeline.svg" width="100%"/></td>
+<td width="50%" valign="top"><img src="images/rv32i_pipeline.png" width="100%"/></td>
 <td width="50%" valign="top">
 
 **기간** &nbsp; 2026.05 – 2026.06<br/>

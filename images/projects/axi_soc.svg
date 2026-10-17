@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400" font-family="Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif">
-<rect x="1" y="1" width="638" height="398" rx="12" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="10 8"/>
-<g transform="translate(284.0,120.0)" fill="none" stroke="#9CA3AF" stroke-width="4" stroke-linejoin="round">
-<rect x="0" y="0" width="72" height="56" rx="6"/><circle cx="22" cy="18" r="7"/><path d="M4 50 L28 30 L42 42 L54 32 L68 46"/></g>
-<text x="320.0" y="220.0" font-size="22" font-weight="700" fill="#4B5563" text-anchor="middle">Vivado Block Design</text>
-<text x="320.0" y="252.0" font-size="14" fill="#6B7280" text-anchor="middle">images/projects/axi_soc.png 로 교체</text>
-</svg>
