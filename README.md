@@ -1,98 +1,199 @@
 # 김동현
 
-**회로 설계 및 검증 엔지니어**
+### Circuit Design & Verification Engineer
 
-> RTL 설계와 UVM 기반 검증을 중심으로 FPGA 및 임베디드 시스템을 개발합니다.  
-> 디지털 및 아날로그 회로 설계, 기능 검증, 하드웨어/소프트웨어 통합에 집중하고 있습니다.
+<a href="mailto:kimdh01315@gmail.com">kimdh01315@gmail.com</a> &nbsp;·&nbsp; <a href="https://github.com/kimdh315">github.com/kimdh315</a>
+
+RTL 설계와 UVM 기반 검증을 중심으로 FPGA 및 임베디드 시스템을 개발합니다.<br/>
+디지털 및 아날로그 회로 설계, 기능 검증, 하드웨어/소프트웨어 통합에 집중하고 있습니다.
 
 ---
 
 ## 학력 및 교육
 
-#### 광운대학교 - 전자공학과 학사  
-2020.03 - 2026.02
-- 관련 과목 : 디지털공학, 컴퓨터구조, 회로이론
-- 학점 : 4.36 / 4.5 (전공 학점 : 4.5 / 4.5)
-- 프로젝트 : 
-  1. 10MHz 10bit Monotonic SAR ADC 회로 설계
-  2. Snapshot Digital PLL 회로 설계
-- 동아리 : ROLAB / Trick
+**광운대학교** 전자공학과 학사 &nbsp;|&nbsp; `2020.03 – 2026.02`
 
-#### 온디바이스 AI 시스템반도체 설계 교육
-2026.03 - 2026.10
-- 프로젝트 :
-  1. AXI 기반 SoC
-  2. RV32I Single-Cycle CPU
-  3. UART / FIFO 설계 및 검증
-  4. CNN 가속기 설계
+- **학점** : 4.36 / 4.5 &nbsp;(전공 **4.5 / 4.5**)
+- **관련 과목** : 디지털공학, 컴퓨터구조, 회로이론
+- **프로젝트** : 10MHz 10bit Monotonic SAR ADC 설계, Snapshot Digital PLL 설계
+- **동아리** : ROLAB / Trick
+
+**온디바이스 AI 시스템반도체 설계 교육** &nbsp;|&nbsp; `2026.03 – 2026.10`
+
+- **프로젝트** : CNN 가속기 설계, RV32I CPU, AXI 기반 SoC, UART / FIFO 설계 및 UVM 검증
 
 ---
 
 ## 기술 스택
 
 | 분야 | 내용 |
-|------|---------|
-| **RTL 설계** | SystemVerilog, Verilog |
-| **검증** | UVM, Functional Coverage |
-| **FPGA** | Xilinx Artix-7 (Basys3), Xilinx Zynq-7020 (Zybo z7-20), Vivado |
-| **임베디드** | MicroBlaze, Embedded C |
-| **툴** | Git, Vivado Simulator, Virtuoso, PSpice |
+|:--|:--|
+| **RTL 설계** | SystemVerilog Verilog |
+| **검증** | UVM Functional Coverage |
+| **FPGA** | Artix-7 Zynq-7020 Vivado |
+| **임베디드** | MicroBlaze C |
+| **툴** | Git Vivado Simulator Virtuoso PSpice |
 
 ---
 
 <div style="page-break-after: always;"></div>
 
-## 주요 프로젝트
+## 프로젝트 기술서
 
-### [LightLetter](https://github.com/mumallaeng/LightLetter.git)
-1. 손글씨를 인식해 광통신을 수행하는 LightLetter 프로젝트 수행
-2. 손글씨를 인식하기 위해 EMNIST 데이터 셋 사용 및 연산을 효율적이고 빠르게 하기 위한 CNN 가속기 설계
-3. 전력 효율을 높이기 위해 입력이 0인 경우 연산을 하지 않는 Zero gating 기법 적용
-4. Zero gating 기법을 통해 기존 가속기 대비 12.3%의 연산속도 감소, 5%의 전력 소모 감소 수행
-5. CPU대비 6.22배의 연산속도, 57.7%의 전력 소모 감소 달성
+### 01. [Light Letter](https://github.com/mumallaeng/LightLetter)
 
-`CNN 가속기` `Verilog`
+<table>
+<tr>
+<td width="50%" align="center" valign="middle"><img src="images/lightletter.png" width="100%"/></td>
+<td width="50%" valign="top">
 
-### [OV7670 카메라 & VGA 출력](https://github.com/kimdh315/vga_camera.git)
-1. OV7670 카메라로 영상을 받아 VGA로 화면에 출력
-2. OV7670 카메라 모듈 설정을 위한 SCCB를 FSM 기반으로 설계
-3. Gray / Binary 필터를 추가하고 Basys3 보드의 스위치로 제어
+**기간** &nbsp; 2026.09 – 2026.10<br/>
+**역할** &nbsp; 손글씨 인식을 위한 CNN 가속기 설계<br/>
+**기술** &nbsp; `Verilog RTL` `C` `Python`
 
-`OV7670` `SCCB` `VGA` `Verilog`
+> **CPU 대비 6.22× 빠른 연산<br/>전력 소모 57.7% 절감**
 
-### [AI기반 운동 자세 체크 및 추천 시스템](https://github.com/kimdh315/body_and_workout_check.git)
-1. AI를 기반으로 사용자의 체형을 바탕으로 운동을 추천하고, 운동의 자세를 체크하는 시스템 구현
-2. Mediapipe 및 LSTM을 통해 자세 확인하는 프로그램 작성
-3. Jetson Orin Nano 환경의 실시간성 확보를 위해 판단 윈도우를 30프레임에서 10프레임으로 최적화
+**목표** &nbsp; 전자파 간섭과 보안 문제가 있는 전파 통신 대신 광통신으로 정보를 전달하고, 전달 수단으로 손글씨 인식 AI 사용
 
-`AI` `LSTM` `Mediapipe` `Jetson Orin Nano` `Python`
+</td>
+</tr>
+<tr>
+<td colspan="2">
 
-### [AXI 기반 SoC](https://github.com/kimdh315/soc_axi_microblaze)
-1. Basys3 보드에 MicroBlaze를 이용한 AXI4-Lite 기반 SoC 구현
-2. RTL로 직접 설계한 Custom IP 적용 - Timer, UART, SPI, I2C, GPIO
-3. Vitis C 코드로 검증
+**문제 해결 — Zero gating & skipping**
+- ReLU 출력과 입력 이미지에 0 값이 많다는 점에 주목
+- 0과의 곱연산은 불필요하다고 판단해 해당 연산을 생략하도록 설계
+- 기존 가속기 대비 **속도 12.3% 향상, 전력 소모 5% 감소**
 
-`AXI` `Custom IP` `Vivado` `Vitis` `C`
+**배운 점** &nbsp; 논문을 구현하는 데서 나아가, 설계 중 발견한 문제의 해결책을 직접 찾아 적용하는 경험
 
-<!-- ### [UVM 기반 I2C / SPI 컨트롤러](https://github.com/kimdh315/spi_i2c_uvm)
-1. SPI 및 I2C 컨트롤러 RTL 설계
-2. UVM으로 검증
+</td>
+</tr>
+</table>
 
-`SystemVerilog` `UVM` `SVA` -->
+### 02. [AI 기반 자세 및 운동 교정](https://github.com/kimdh315/body_and_workout_check)
 
-### [RV32I Pipeline CPU](https://github.com/kimdh315/rv32i_pipeline)
-1. RISC-V RV32I 명령어 세트를 지원하는 5단 파이프라인 CPU
-2. Single-Cycle CPU에서 발생한 setup time violation을 해결하기 위해 설계
-3. Single-Cycle 설계 대비 critical path delay를 14.391 ns에서 9.736 ns로 32.3% 단축
-4. 어셈블리 코드(Bubble sort 알고리즘)로 검증
+<table>
+<tr>
+<td width="50%" align="center" valign="middle"><img src="images/workout_check.png" width="100%"/></td>
+<td width="50%" valign="top">
 
-`Verilog` `RISC-V` `Basys3`
+**기간** &nbsp; 2026.08<br/>
+**역할** &nbsp; Mediapipe·LSTM 기반 운동 종류 검출<br/>
+**기술** &nbsp; `Python` `LSTM` `Mediapipe` `Jetson Orin Nano`
 
-### [UVM 기반 UART & FIFO](https://github.com/kimdh315/uart_fifo_uvm)
-1. 8-N-1 UART 프로토콜 컨트롤러 및 8bit 폭 동기식 FIFO RTL 설계
-2. UVM을 통해 동작 검증
+> **K-Fold 적용으로 운동 인식 정확도 98%**
 
-`Verilog` `SystemVerilog` `UART` `FIFO` `UVM`
+**목표** &nbsp; 웹캠 영상으로 체형을 분석해 맞춤 운동을 처방하고, 운동 자세를 실시간으로 판별하는 데스크톱 앱 구현
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+**문제 해결 — TensorRT 연동 중 Segmentation fault**
+- 다른 Jetson에서 만든 TRT 엔진을 그대로 쓰면서 메모리 매핑이 달라 발생한 문제임을 확인
+- ONNX 파일을 기반으로 사용 보드에서 직접 엔진을 변환해 호환성 문제 해결
+
+**배운 점** &nbsp; 컴퓨터 비전, LLM, LSTM을 하나의 실시간 앱으로 통합하고, 모델 추론의 안정성과 이식성 문제를 해결하는 방법
+
+</td>
+</tr>
+</table>
+
+### 03. [AXI4-Lite 기반 SoC 설계](https://github.com/kimdh315/soc_axi_microblaze)
+
+<table>
+<tr>
+<td width="50%" align="center" valign="middle"><img src="images/axi_soc.png" width="100%"/></td>
+<td width="50%" valign="top">
+
+**기간** &nbsp; 2026.06<br/>
+**역할** &nbsp; AXI4-Lite Slave Custom IP 5종 설계 및 C 기반 제어<br/>
+**기술** &nbsp; `Verilog RTL` `UVM` `Vivado` `Vitis` `Basys3`
+
+> **GPIO · SPI · UART · I2C · Timer<br/>Custom IP 5종 RTL 직접 설계**
+
+**목표** &nbsp; MicroBlaze SoC에서 주변장치를 RTL로 직접 설계하고, 검증부터 C 애플리케이션 구동까지 HW/SW 풀스택 완성
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+**문제 해결 — I2C polling 제어 문제**
+- AXI로 I2C Master를 제어할 때 연속적인 동작 흐름 때문에 인터럽트 기반 동작이 어려움
+- I2C transaction 모듈을 추가로 설계해 인터럽트 기반으로 동작하도록 구조 변경
+
+**배운 점** &nbsp; AMBA 버스 프로토콜 계층과 인터럽트를 직접 구현하며 RTL 설계와 C 드라이버가 맞물리는 지점을 체득
+
+</td>
+</tr>
+</table>
+
+### 04. [RV32I Pipeline CPU 설계](https://github.com/kimdh315/rv32i_pipeline)
+
+<table>
+<tr>
+<td width="50%" align="center" valign="middle"><img src="images/rv32i_pipeline.png" width="100%"/></td>
+<td width="50%" valign="top">
+
+**기간** &nbsp; 2026.05 – 2026.06<br/>
+**역할** &nbsp; Pipeline CPU 전체 및 Hazard controller 설계<br/>
+**기술** &nbsp; `Verilog RTL` `Vivado` `Basys3`
+
+> **Critical path delay 14.391 → 9.736 ns<br/>최대 동작 속도 32.3% 개선**
+
+**목표** &nbsp; Single-cycle 구조의 setup time violation을 해결하기 위해 RV32I 5-stage Pipeline CPU를 Harvard 구조로 설계
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+**문제 해결**
+- **Setup time violation** : 5-stage 파이프라인으로 critical path를 분할하고, Hazard controller로 파이프라인 hazard 제어
+- **LH/LHU 하프워드 로드 버그** : 워드 내 상/하위 하프워드 선택 오류를 `dm_addr[1]` 비트로 오프셋을 분기해 해결
+
+**배운 점** &nbsp; ISA가 하드웨어로 구현되는 과정을 이해하고, 구조 개선으로 타이밍 문제를 해결하는 방법
+
+</td>
+</tr>
+</table>
+
+### 05. SAR ADC 설계
+
+<table>
+<tr>
+<td width="50%" align="center" valign="middle">
+<img src="images/sar_adc_block_diagram.png" width="100%"/>
+<br/>
+<img src="images/sar_adc_waveform.png" width="100%"/>
+</td>
+<td width="50%" valign="top">
+
+**기간** &nbsp; 2024.09 – 2024.11<br/>
+**역할** &nbsp; 팀장 · Bootstrapped switch 설계 및 전체 통합<br/>
+**기술** &nbsp; `Virtuoso`
+
+> **10bit resolution · 101.6 µW<br/>전체 팀 중 최고 성능 지표**
+
+**목표** &nbsp; Monotonic 기법을 적용해 저전력·고해상도로 동작하는 SAR ADC 설계
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+**문제 해결 — CDAC 전압 노이즈**
+- 노이즈가 입력 전압에 따라 변하는 것을 보고, switch의 기생 커패시턴스가 원인임을 확인
+- 차동 신호라는 점을 이용해 Cross-coupled capacitor를 추가해 노이즈 개선
+
+**배운 점** &nbsp; MOSFET 수준에서 회로를 설계하고, 의도하지 않은 노이즈를 분석해 해결하는 역량
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -107,8 +208,8 @@
 
 ## 연락처
 
-- Email: kimdh01315@gmail.com
-- GitHub: https://github.com/kimdh315/portfolio
+- **Email** : kimdh01315@gmail.com
+- **GitHub** : https://github.com/kimdh315
 
 ---
 

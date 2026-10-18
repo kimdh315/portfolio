@@ -1,113 +1,215 @@
 # Donghyun Kim
 
-**Circuit Design & Verification Engineer**
+### RTL Design & Verification Engineer
 
-> I develop FPGA and embedded systems with a focus on RTL design and UVM-based verification.  
-> My work centers on digital and analog circuit design, functional verification, and hardware/software integration.
+<a href="mailto:kimdh01315@gmail.com">kimdh01315@gmail.com</a> &nbsp;·&nbsp; <a href="https://github.com/kimdh315">github.com/kimdh315</a>
+
+I develop FPGA and embedded systems with a focus on RTL design and UVM-based verification.<br/>
+My work centers on digital and analog circuit design, functional verification, and hardware/software integration.
 
 ---
 
 ## Education
 
-#### Kwangwoon University - Bachelor, Electronic Engineering  
-2020.03 - 2026.02
-- Relevant coursework : Digital Engineering, Computer Architecture, Circuit Theory
-- GPA : 4.36 / 4.5 (Major GPA : 4.5 / 4.5)
-- Project : 
-  1. 10MHz 10bits Monotonic SAR ADC circuit design
-  2. Snapshot Digital PLL circuit design
-- Club : ROLAB / Trick
+**Kwangwoon University** B.S. in Electronic Engineering &nbsp;|&nbsp; `2020.03 – 2026.02`
 
-#### On-Device AI System Semiconductor Design Education
-2026.03 - 2026.10
-- Project :
-  1. SoC based on AXI
-  2. RV32I Single-Cycle CPU
-  3. UART / FIFO Design & Verification
-  4. CNN Accelerator Design
+- **GPA** : 4.36 / 4.5 &nbsp;(Major **4.5 / 4.5**)
+- **Coursework** : Digital Engineering, Computer Architecture, Circuit Theory
+- **Projects** : 10MHz 10bit Monotonic SAR ADC · Snapshot Digital PLL
+- **Clubs** : ROLAB / Trick
+
+**On-Device AI System Semiconductor Design Program** &nbsp;|&nbsp; `2026.03 – 2026.10`
+
+- **Projects** : CNN accelerator, RV32I CPU, AXI-based SoC, UART / FIFO design and UVM verification
 
 ---
 
 ## Skills
 
 | Area | Details |
-|------|---------|
-| **RTL Design** | SystemVerilog, Verilog |
-| **Verification** | UVM, Functional Coverage |
-| **FPGA** | Xilinx Artix-7 (Basys3), Xilinx Zynq-7020 (Zybo Z7-20), Vivado |
-| **Embedded** | MicroBlaze, Embedded C |
-| **Tools** | Git, Vivado Simulator, Virtuoso, PSpice |
+|:--|:--|
+| **RTL Design** | SystemVerilog Verilog |
+| **Verification** | UVM Functional Coverage |
+| **FPGA** | Artix-7 Zynq-7020 Vivado |
+| **Embedded** | MicroBlaze C |
+| **Tools** | Git Vivado Simulator Virtuoso PSpice |
 
 ---
 
 <div style="page-break-after: always;"></div>
 
-## Featured Projects
+## Project Details
 
-### [LightLetter](https://github.com/mumallaeng/LightLetter.git)
-1. LightLetter project that recognizes handwriting and transmits it through optical communication
-2. Used the EMNIST dataset for handwriting recognition and designed a CNN accelerator for fast and efficient computation
-3. Applied zero gating, which skips computation when the input is zero, to improve power efficiency
-4. Achieved 10x faster computation and 40% lower power consumption compared to the CPU
+### 01. [Light Letter](https://github.com/mumallaeng/LightLetter)
 
-`CNN Accelerator` `Verilog`
+<table>
+<tr>
+<td width="50%" align="center" valign="middle"><img src="images/lightletter.png" width="100%"/></td>
+<td width="50%" valign="top">
 
-### [OV7670 Camera with VGA](https://github.com/kimdh315/vga_camera.git)
-1. Get image from ov7670 camera and display it by VGA connect
-2. SCCB is designed based on FSM to setup ov7670 camera module
-3. Gray and Binary filter is added and controlled by switch on Basys3 board
+**Period** &nbsp; 2026.09 – 2026.10<br/>
+**Role** &nbsp; CNN accelerator design for handwriting recognition<br/>
+**Stack** &nbsp; `Verilog RTL` `C` `Python`
 
-`OV7670` `SCCB` `VGA` `Verilog`
+> **6.22× faster than CPU<br/>57.7% lower power consumption**
 
-### [AI-based Workout Posture Check & Recommendation System](https://github.com/kimdh315/body_and_workout_check.git)
-1. AI-based system that recommends workouts based on the user's body type and checks workout posture
-2. Developed a posture checking program using Mediapipe and LSTM
-3. Optimized the decision window from 30 frames to 10 frames to secure real-time performance on Jetson Orin Nano
+**Goal** &nbsp; Transmit information over optical communication instead of radio, which suffers from electromagnetic interference and security issues, using handwriting recognition AI as the input method
 
-`AI` `LSTM` `Mediapipe` `Jetson Orin Nano` `Python`
+</td>
+</tr>
+<tr>
+<td colspan="2">
 
-### [SoC based on AXI](https://github.com/kimdh315/soc_axi_microblaze)
-1. AXI4-Lite based SoC implemented on the Basys3 with MicroBlaze
-2. RTL design custom IP is used - Timer, UART, SPI, I2C, GPIO
-3. Verification with Vitis C code
+**Problem Solving — Zero gating & skipping**
+- Noticed that ReLU outputs and input images contain a large number of zeros
+- Concluded that multiplications by zero are unnecessary and designed the accelerator to skip them
+- **12.3% higher speed and 5% lower power** than the baseline accelerator
 
-`AXI` `Custom IP` `Vivado` `Vitis` `C`
+**Takeaway** &nbsp; Going beyond reproducing a paper to finding and applying my own solutions to problems discovered during design
 
-<!-- ### [I2C / SPI Controller with UVM](https://github.com/kimdh315/spi_i2c_uvm)
-1. RTL design of SPI and I2C controller
-2. Verification with UVM
+</td>
+</tr>
+</table>
 
-`SystemVerilog` `UVM` `SVA` -->
+### 02. [AI-based Posture & Workout Correction](https://github.com/kimdh315/body_and_workout_check)
 
-### [RV32I Pipeline CPU](https://github.com/kimdh315/rv32i_pipeline)
-1. 5 stage pipeline CPU supporting the RISC-V RV32I instruction set
-2. Designed to resolve setup time violation at single cycle CPU
-3. Achieved a 32.3% reduction in critical path delay compared to the single-cycle design, improving from 14.391 ns to 9.736 ns
-4. Verification with assembly code - Bubble sort algorithm
+<table>
+<tr>
+<td width="50%" align="center" valign="middle"><img src="images/workout_check.png" width="100%"/></td>
+<td width="50%" valign="top">
 
-`Verilog` `RISC-V` `Basys3`
+**Period** &nbsp; 2026.08<br/>
+**Role** &nbsp; Workout type detection with Mediapipe and LSTM<br/>
+**Stack** &nbsp; `Python` `LSTM` `Mediapipe` `Jetson Orin Nano`
 
-### [UART & FIFO with UVM](https://github.com/kimdh315/uart_fifo_uvm)
-1. RTL design of 8-N-1 UART protocol controller and 8 bit width synchronous FIFO
-2. Functional verification with UVM
+> **98% workout recognition accuracy with K-Fold**
 
-`Verilog` `SystemVerilog` `UART` `FIFO` `UVM`
+**Goal** &nbsp; A desktop application that analyzes body type from webcam video, prescribes a tailored workout, and judges exercise posture in real time
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+**Problem Solving — Segmentation fault during TensorRT integration**
+- Traced it to reusing a TRT engine built on a different Jetson, where the memory mapping differed
+- Resolved the compatibility issue by converting the engine from the ONNX file directly on the target board
+
+**Takeaway** &nbsp; Integrating computer vision, an LLM, and LSTM into a single real-time application, and solving stability and portability issues in model inference
+
+</td>
+</tr>
+</table>
+
+### 03. [AXI4-Lite based SoC](https://github.com/kimdh315/soc_axi_microblaze)
+
+<table>
+<tr>
+<td width="50%" align="center" valign="middle"><img src="images/axi_soc.png" width="100%"/></td>
+<td width="50%" valign="top">
+
+**Period** &nbsp; 2026.06<br/>
+**Role** &nbsp; Design of 5 AXI4-Lite slave custom IPs and C-based control<br/>
+**Stack** &nbsp; `Verilog RTL` `UVM` `Vivado` `Vitis` `Basys3`
+
+> **GPIO · SPI · UART · I2C · Timer<br/>5 custom IPs designed at RTL**
+
+**Goal** &nbsp; Design the peripherals of a MicroBlaze SoC at RTL myself and complete the full HW/SW stack, from verification to running a C application
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+**Problem Solving — I2C polling control**
+- Driving the I2C master over AXI made interrupt-based operation difficult because of its continuous operation flow
+- Added an I2C transaction module and restructured the design to operate on interrupts
+
+**Takeaway** &nbsp; Implementing the AMBA bus protocol layer and interrupts myself, and learning first-hand where RTL design and the C driver meet
+
+</td>
+</tr>
+</table>
+
+### 04. [RV32I Pipeline CPU](https://github.com/kimdh315/rv32i_pipeline)
+
+<table>
+<tr>
+<td width="50%" align="center" valign="middle"><img src="images/rv32i_pipeline.png" width="100%"/></td>
+<td width="50%" valign="top">
+
+**Period** &nbsp; 2026.05 – 2026.06<br/>
+**Role** &nbsp; Design of the full pipeline CPU and the hazard controller<br/>
+**Stack** &nbsp; `Verilog RTL` `Vivado` `Basys3`
+
+> **Critical path delay 14.391 → 9.736 ns<br/>32.3% higher maximum operating speed**
+
+**Goal** &nbsp; Design an RV32I 5-stage pipeline CPU in a Harvard architecture to resolve the setup time violation of the single-cycle design
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+**Problem Solving**
+- **Setup time violation** : Split the critical path across a 5-stage pipeline and controlled pipeline hazards with a hazard controller
+- **LH/LHU halfword load bug** : Fixed incorrect upper/lower halfword selection within a word by branching the offset on the `dm_addr[1]` bit
+
+**Takeaway** &nbsp; Understanding how an ISA becomes hardware, and how to resolve timing problems through structural improvement
+
+</td>
+</tr>
+</table>
+
+### 05. SAR ADC Design
+
+<table>
+<tr>
+<td width="50%" align="center" valign="middle">
+<img src="images/sar_adc_block_diagram.png" width="100%"/>
+<br/>
+<img src="images/sar_adc_waveform.png" width="100%"/>
+</td>
+<td width="50%" valign="top">
+
+**Period** &nbsp; 2024.09 – 2024.11<br/>
+**Role** &nbsp; Team lead · Bootstrapped switch design and full integration<br/>
+**Stack** &nbsp; `Virtuoso`
+
+> **10bit resolution · 101.6 µW<br/>Best performance figures among all teams**
+
+**Goal** &nbsp; Design a SAR ADC that operates at low power and high resolution by applying the monotonic switching technique
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+**Problem Solving — CDAC voltage noise**
+- Observed that the noise varied with the input voltage and identified the switch's parasitic capacitance as the cause
+- Exploited the differential nature of the signal and added cross-coupled capacitors to improve the noise
+
+**Takeaway** &nbsp; Designing circuits at the MOSFET level and analyzing unintended noise to resolve it
+
+</td>
+</tr>
+</table>
 
 ---
 
 <div style="page-break-after: always;"></div>
 
-## AI Utilization
+<!-- ## AI Utilization
 
 ### [UVM Auto Generation](https://github.com/kimdh315/auto_uvm_gen.git)
 - Automated generation of UVM boilerplate with Python, minimizing repetitive coding unrelated to verification logic
 
----
+--- -->
 
 ## Contact
 
-- Email: kimdh01315@gmail.com
-- GitHub: https://github.com/kimdh315/portfolio
+- **Email** : kimdh01315@gmail.com
+- **GitHub** : https://github.com/kimdh315
 
 ---
 
