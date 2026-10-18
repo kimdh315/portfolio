@@ -1,16 +1,11 @@
-<div align="center">
-
 # 김동현
 
-### RTL Design & Verification Engineer
+### Circuit Design & Verification Engineer
 
-<a href="mailto:kimdh01315@gmail.com"><img src="https://img.shields.io/badge/Email-kimdh01315@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white"/></a>
-<a href="https://github.com/kimdh315"><img src="https://img.shields.io/badge/GitHub-kimdh315-181717?style=flat-square&logo=github&logoColor=white"/></a>
+<a href="mailto:kimdh01315@gmail.com">kimdh01315@gmail.com</a> &nbsp;·&nbsp; <a href="https://github.com/kimdh315">github.com/kimdh315</a>
 
 RTL 설계와 UVM 기반 검증을 중심으로 FPGA 및 임베디드 시스템을 개발합니다.<br/>
 디지털 및 아날로그 회로 설계, 기능 검증, 하드웨어/소프트웨어 통합에 집중하고 있습니다.
-
-</div>
 
 ---
 
@@ -20,7 +15,7 @@ RTL 설계와 UVM 기반 검증을 중심으로 FPGA 및 임베디드 시스템�
 
 - **학점** : 4.36 / 4.5 &nbsp;(전공 **4.5 / 4.5**)
 - **관련 과목** : 디지털공학, 컴퓨터구조, 회로이론
-- **프로젝트** : 10MHz 10bit Monotonic SAR ADC 설계 · Snapshot Digital PLL 설계
+- **프로젝트** : 10MHz 10bit Monotonic SAR ADC 설계, Snapshot Digital PLL 설계
 - **동아리** : ROLAB / Trick
 
 **온디바이스 AI 시스템반도체 설계 교육** &nbsp;|&nbsp; `2026.03 – 2026.10`
