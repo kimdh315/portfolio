@@ -49,7 +49,7 @@ RTL 설계와 UVM 기반 검증을 중심으로 FPGA 및 임베디드 시스템�
 
 <table>
 <tr>
-<td width="50%" valign="top"><img src="images/lightletter.png" width="100%"/></td>
+<td width="50%" align="center" valign="middle"><img src="images/lightletter.png" width="100%"/></td>
 <td width="50%" valign="top">
 
 **기간** &nbsp; 2026.09 – 2026.10<br/>
@@ -80,7 +80,7 @@ RTL 설계와 UVM 기반 검증을 중심으로 FPGA 및 임베디드 시스템�
 
 <table>
 <tr>
-<td width="50%" valign="top"><img src="images/workout_check.png" width="100%"/></td>
+<td width="50%" align="center" valign="middle"><img src="images/workout_check.png" width="100%"/></td>
 <td width="50%" valign="top">
 
 **기간** &nbsp; 2026.08<br/>
@@ -110,7 +110,7 @@ RTL 설계와 UVM 기반 검증을 중심으로 FPGA 및 임베디드 시스템�
 
 <table>
 <tr>
-<td width="50%" valign="top"><img src="images/axi_soc.png" width="100%"/></td>
+<td width="50%" align="center" valign="middle"><img src="images/axi_soc.png" width="100%"/></td>
 <td width="50%" valign="top">
 
 **기간** &nbsp; 2026.06<br/>
@@ -140,7 +140,7 @@ RTL 설계와 UVM 기반 검증을 중심으로 FPGA 및 임베디드 시스템�
 
 <table>
 <tr>
-<td width="50%" valign="top"><img src="images/rv32i_pipeline.png" width="100%"/></td>
+<td width="50%" align="center" valign="middle"><img src="images/rv32i_pipeline.png" width="100%"/></td>
 <td width="50%" valign="top">
 
 **기간** &nbsp; 2026.05 – 2026.06<br/>
@@ -170,7 +170,11 @@ RTL 설계와 UVM 기반 검증을 중심으로 FPGA 및 임베디드 시스템�
 
 <table>
 <tr>
-<td width="50%" valign="top"><img src="images/projects/sar_adc.svg" width="100%"/></td>
+<td width="50%" align="center" valign="middle">
+<img src="images/sar_adc_block_diagram.png" width="100%"/>
+<br/>
+<img src="images/sar_adc_waveform.png" width="100%"/>
+</td>
 <td width="50%" valign="top">
 
 **기간** &nbsp; 2024.09 – 2024.11<br/>
