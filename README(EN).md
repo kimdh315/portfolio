@@ -2,8 +2,6 @@
 
 ### RTL Design & Verification Engineer
 
-<a href="mailto:kimdh01315@gmail.com">kimdh01315@gmail.com</a> &nbsp;·&nbsp; <a href="https://github.com/kimdh315">github.com/kimdh315</a>
-
 I develop FPGA and embedded systems with a focus on RTL design and UVM-based verification.<br/>
 My work centers on digital and analog circuit design, functional verification, and hardware/software integration.
 

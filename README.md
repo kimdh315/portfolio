@@ -2,8 +2,6 @@
 
 ### Circuit Design & Verification Engineer
 
-<a href="mailto:kimdh01315@gmail.com">kimdh01315@gmail.com</a> &nbsp;·&nbsp; <a href="https://github.com/kimdh315">github.com/kimdh315</a>
-
 RTL 설계와 UVM 기반 검증을 중심으로 FPGA 및 임베디드 시스템을 개발합니다.<br/>
 디지털 및 아날로그 회로 설계, 기능 검증, 하드웨어/소프트웨어 통합에 집중하고 있습니다.
 
