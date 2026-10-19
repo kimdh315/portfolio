@@ -69,7 +69,37 @@ RTL 설계와 UVM 기반 검증을 중심으로 FPGA 및 임베디드 시스템�
 </tr>
 </table>
 
-### 02. [AI 기반 자세 및 운동 교정](https://github.com/kimdh315/body_and_workout_check)
+### 02. [객체 추적 CCTV](https://github.com/mumallaeng/VGA-Pan-Tilt-CCTV)
+
+<table>
+<tr>
+<td width="50%" align="center" valign="middle"><img src="images/pan_tilt_cctv.png" width="50%"/></td>
+<td width="50%" valign="top">
+
+**기간** &nbsp; 2026.09<br/>
+**역할** &nbsp; 전체 Top 및 Bounding Box 로직 설계<br/>
+**기술** &nbsp; `Verilog RTL` `OV7670` `Servo motor`
+
+> **객체를 인식하고 추적하는 시스템을 FPGA에 구현**
+
+**목표** &nbsp; 녹색 객체를 인식하고 이를 카메라로 추적하는 시스템을 FPGA로 구현
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+**문제 해결 — 모터가 객체를 추적하지 않는 현상**
+- UART를 통해 모터에 입력되는 값을 확인한 결과 값은 정상임을 확인
+- 모터 고장임을 확인하여 교체 후 정상 동작
+
+**배운 점** &nbsp; 팀 내에서 파트를 나누고, 문제가 발생하였을 때 소통을 통해 돕고 해결할 수 있는 역량을 기름
+
+</td>
+</tr>
+</table>
+
+### 03. [AI 기반 자세 및 운동 교정](https://github.com/kimdh315/body_and_workout_check)
 
 <table>
 <tr>
@@ -89,9 +119,10 @@ RTL 설계와 UVM 기반 검증을 중심으로 FPGA 및 임베디드 시스템�
 <tr>
 <td colspan="2">
 
-**문제 해결 — TensorRT 연동 중 Segmentation fault**
-- 다른 Jetson에서 만든 TRT 엔진을 그대로 쓰면서 메모리 매핑이 달라 발생한 문제임을 확인
-- ONNX 파일을 기반으로 사용 보드에서 직접 엔진을 변환해 호환성 문제 해결
+**문제 해결 — 실측에서 인식이 되지 않는 문제**
+- 노트북에서 확인하는 경우에는 제대로 인식이 되었으나 실측에서는 제대로 수행되지 않는 문제 발생
+- Jetson Orin Nano와 카메라의 FPS가 노트북 웹캠의 FPS보다 낮아서 발생하는 문제임을 확인
+- 기존 30 frame에서 10 frame의 데이터만으로 판단하도록 학습 모델 변경 및 정상 동작
 
 **배운 점** &nbsp; 컴퓨터 비전, LLM, LSTM을 하나의 실시간 앱으로 통합하고, 모델 추론의 안정성과 이식성 문제를 해결하는 방법
 
@@ -99,7 +130,7 @@ RTL 설계와 UVM 기반 검증을 중심으로 FPGA 및 임베디드 시스템�
 </tr>
 </table>
 
-### 03. [AXI4-Lite 기반 SoC 설계](https://github.com/kimdh315/soc_axi_microblaze)
+### 04. [AXI4-Lite 기반 SoC 설계](https://github.com/kimdh315/soc_axi_microblaze)
 
 <table>
 <tr>
@@ -129,7 +160,7 @@ RTL 설계와 UVM 기반 검증을 중심으로 FPGA 및 임베디드 시스템�
 </tr>
 </table>
 
-### 04. [RV32I Pipeline CPU 설계](https://github.com/kimdh315/rv32i_pipeline)
+### 05. [RV32I Pipeline CPU 설계](https://github.com/kimdh315/rv32i_pipeline)
 
 <table>
 <tr>
@@ -159,7 +190,7 @@ RTL 설계와 UVM 기반 검증을 중심으로 FPGA 및 임베디드 시스템�
 </tr>
 </table>
 
-### 05. SAR ADC 설계
+### 06. SAR ADC 설계
 
 <table>
 <tr>

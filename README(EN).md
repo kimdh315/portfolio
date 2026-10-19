@@ -69,7 +69,37 @@ My work centers on digital and analog circuit design, functional verification, a
 </tr>
 </table>
 
-### 02. [AI-based Posture & Workout Correction](https://github.com/kimdh315/body_and_workout_check)
+### 02. [Object Tracking CCTV](https://github.com/mumallaeng/VGA-Pan-Tilt-CCTV)
+
+<table>
+<tr>
+<td width="50%" align="center" valign="middle"><img src="images/pan_tilt_cctv.png" width="50%"/></td>
+<td width="50%" valign="top">
+
+**Period** &nbsp; 2026.09<br/>
+**Role** &nbsp; Top-level integration and bounding box logic design<br/>
+**Stack** &nbsp; `Verilog RTL` `OV7670` `Servo motor`
+
+> **An object detection and tracking system implemented on FPGA**
+
+**Goal** &nbsp; Implement on FPGA a system that detects a green object and tracks it with a camera
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+**Problem Solving — Motor not tracking the object**
+- Checked the values fed to the motor over UART and confirmed they were correct
+- Identified a faulty motor; after replacing it, the system worked as intended
+
+**Takeaway** &nbsp; Dividing the work into parts within the team, and building the ability to help each other and resolve problems through communication when they arise
+
+</td>
+</tr>
+</table>
+
+### 03. [AI-based Posture & Workout Correction](https://github.com/kimdh315/body_and_workout_check)
 
 <table>
 <tr>
@@ -89,9 +119,10 @@ My work centers on digital and analog circuit design, functional verification, a
 <tr>
 <td colspan="2">
 
-**Problem Solving — Segmentation fault during TensorRT integration**
-- Traced it to reusing a TRT engine built on a different Jetson, where the memory mapping differed
-- Resolved the compatibility issue by converting the engine from the ONNX file directly on the target board
+**Problem Solving — Recognition failing in real-world testing**
+- Recognition worked correctly when tested on a laptop, but failed in real-world testing on the device
+- Found the cause: the Jetson Orin Nano and its camera ran at a lower FPS than the laptop webcam
+- Changed the model to make decisions from 10 frames of data instead of 30, after which it worked correctly
 
 **Takeaway** &nbsp; Integrating computer vision, an LLM, and LSTM into a single real-time application, and solving stability and portability issues in model inference
 
@@ -99,7 +130,7 @@ My work centers on digital and analog circuit design, functional verification, a
 </tr>
 </table>
 
-### 03. [AXI4-Lite based SoC](https://github.com/kimdh315/soc_axi_microblaze)
+### 04. [AXI4-Lite based SoC](https://github.com/kimdh315/soc_axi_microblaze)
 
 <table>
 <tr>
@@ -129,7 +160,7 @@ My work centers on digital and analog circuit design, functional verification, a
 </tr>
 </table>
 
-### 04. [RV32I Pipeline CPU](https://github.com/kimdh315/rv32i_pipeline)
+### 05. [RV32I Pipeline CPU](https://github.com/kimdh315/rv32i_pipeline)
 
 <table>
 <tr>
@@ -159,7 +190,7 @@ My work centers on digital and analog circuit design, functional verification, a
 </tr>
 </table>
 
-### 05. SAR ADC Design
+### 06. SAR ADC Design
 
 <table>
 <tr>
