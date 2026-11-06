@@ -107,7 +107,7 @@ RTL 설계와 UVM 기반 검증을 중심으로 FPGA 및 임베디드 시스템�
 <td width="50%" valign="top">
 
 **기간** &nbsp; 2026.08<br/>
-**역할** &nbsp; Mediapipe·LSTM 기반 운동 종류 검출<br/>
+**역할** &nbsp; Mediapipe 및 LSTM 기반 운동 종류 검출<br/>
 **기술** &nbsp; `Python` `LSTM` `Mediapipe` `Jetson Orin Nano`
 
 > **K-Fold 적용으로 운동 인식 정확도 98%**
